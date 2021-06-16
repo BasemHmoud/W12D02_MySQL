@@ -1,17 +1,19 @@
 const express = require('express');
 const app = express();
 require('dotenv').config();
-
+app.use(express.json());
 const db = require('./db');
 
-const books = require('./books');
+const {addBooks,findAllBooks,updateBooks,deleteBooks,bookDescending} = require('./books');
 /* ==================== */
 
 // console.log('HHHHHHHHHHHHHHHHHHHHHHHHHH:',users);
 // users.findAll();
 
-app.get('/books', books.findAllBooks);
-app.post('/books', books.addBooks);
+app.get('/books',findAllBooks);
+app.post('/books', addBooks);
+app.put('/books:book_id', updateBooks);
+app.delete('/books:book_id',deleteBooks);
 
 /* ==================== */
 
