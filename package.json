@@ -1,7 +1,6 @@
 {
   "name": "w10d2",
   "version": "1.0.0",
-  "description": "",
   "main": "main.js",
   "dependencies": {
     "dotenv": "^10.0.0",
@@ -15,5 +14,14 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BasemHmoud/w12D02.git"
+  },
+  "bugs": {
+    "url": "https://github.com/BasemHmoud/w12D02/issues"
+  },
+  "homepage": "https://github.com/BasemHmoud/w12D02#readme",
+  "description": ""
 }
